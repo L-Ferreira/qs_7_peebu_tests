@@ -6,9 +6,13 @@ Feature: Access the website's home page
   Background: 
     Given the user has an open browser
     When the user navigates to the PeeBu Home Page
-    Then the user see the "PeeBu" Headline
+
+  Scenario: See the "PeeBu" Headline
+    Then the user sees the "PeeBu" Headline
 
   Scenario: See the transactions table
-    Given the user has an open browser
-    When the user navigates to the PeeBu Home Page
     Then the user sees the transactions table
+
+  Scenario: See the statistics
+    Given the user scrolls down
+    Then the user sees the "Statistics" Headline
