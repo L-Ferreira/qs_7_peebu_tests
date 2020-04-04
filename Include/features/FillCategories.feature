@@ -35,3 +35,10 @@ Feature: Fill transaction category
     And the user selects the <category> category for the <transactionid> transaction
     Then the user should go back to the PeeBu Home Page
     And the <transactionid> transaction should have the <category> category
+
+  Scenario: Cancel and go back to the PeeBu Home page
+    And there is at least one transaction with no category
+    When the user navigates to the PeeBu Home Page
+    And the user clicks the "Fix" button
+    And the user clicks the "Cancel" button
+    Then the user should go back to the PeeBu Home Page
