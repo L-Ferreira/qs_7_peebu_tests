@@ -8,7 +8,7 @@ Feature: Access the Statistics section
     And the user navigates to the PeeBu Home Page
     And the user scrolls down to the Statistics section
 
-  #Cateories
+  #Categories
   Scenario: See the Categories Headline
     Then the user sees the "Categories" Headline
 

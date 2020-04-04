@@ -33,5 +33,6 @@ Feature: Fill transaction category
     When the user navigates to the PeeBu Home Page
     And the user clicks the "Fix" button
     And the user selects the <category> category for the <transactionid> transaction
+    And the user clicks the "Save" button
     Then the user should go back to the PeeBu Home Page
     And the <transactionid> transaction should have the <category> category
