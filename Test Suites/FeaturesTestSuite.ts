@@ -14,6 +14,6 @@
       <guid>ec3569a9-170c-496f-bded-cca44f2969e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TestCaseFeatureXpto</testCaseId>
+      <testCaseId>Test Cases/TestCaseFeaturesPeeBu</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
