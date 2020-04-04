@@ -1,27 +1,33 @@
-Feature: Filter the transactions table
+#Using API for filtering -> https://5e5d229a97d2ea00147971d0.mockapi.io/sq/transactions?filter=
+Feature: Filter the transaction table
   As a user
-  I want to filter the transactions table
-  So I can see specific transactions combinations
+  I want to filter the transaction table
+  So I can see specific transaction combinations
 
   Background: 
     Given the user has an open browser
     And the user navigates to the PeeBu Home Page
 
   Scenario Outline: Use the table search field
-    When the user selects the table search field
+    When the user selects the "Table Search" field
     And the user inputs a <filter> text
-    Then the user should see <resultcount> filtered results
+    And the user presses the "Go!" button
+    Then the user should see the results filtered by <filter>
 
     Examples: 
-      | filter   | resultcount |
-      | farmacia |           5 |
-      | propinas |           7 |
+      | filter    |
+      | education |
+      | health    |
+      | other     |
 
   Scenario Outline: Filter transactions by date
-    When the user selects the "Choose a date" button
-    And the user inserts a <startdate> and an <enddate>
+    When the user selects the "From date" button
+    And the user picks the <startdate> date
+    And the user selects the "To date" button
+    And the user picks the <enddate> date
     Then the user should see <resultcount> filtered results
 
+    #The resultcount values are not correct yet
     Examples: 
       | startdate  | enddate    | resultcount |
       | 2020-03-12 | 2020-03-17 |           8 |
@@ -36,8 +42,9 @@ Feature: Filter the transactions table
     Then the user should see the results in <ordertype> order of <columnname>
 
     Examples: 
-      | columnname | ordertype |
-      | name1      |         5 |
-      | name2      |         7 |
-
-
+      | columnname | ordertype  |
+      | entity     | ascending  |
+      | amount     | ascending  |
+      | date       | descending |
+      | type       | descending |
+      | category   | ascending  |
