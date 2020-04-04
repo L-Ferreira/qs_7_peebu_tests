@@ -5,7 +5,9 @@ Feature: See the transaction details
 
   Background: 
     Given the user has an open browser
-    And the user has at least one transaction
+    And the user has a transaction with the following information
+      | entity           | amount | timestamp  | type    | category       |
+      | Johnson and Sons | 299.26 | 2020-01-01 | Payment | Not classified |
     When the user navigates to the PeeBu Home Page
 
   Scenario: Transaction table has values
@@ -30,3 +32,9 @@ Feature: See the transaction details
     And the user selects the "info" button on the first table line
     And the user clicks the "Close" button
     Then the user should go back to the PeeBu Home Page
+
+  Scenario: Transaction Information details are correct
+    And the user selects the info" button on the first table line
+    Then the user should see the following information on the details
+      | entity           | amount | timestamp  | type    | category       |
+      | Johnson and Sons | 299.26 | 2020-01-01 | Payment | Not classified |
