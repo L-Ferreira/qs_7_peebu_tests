@@ -1,0 +1,82 @@
+#FeatureFiles = 5
+
+*** Landing Page (AccessWebSite || TransactionDetails)
+- Happy Path - ok
+
+- Scenarios - 4
+>> how will you assess that all the transactions are presented on the list?
+>> what happens when the balance does not exist?
+>> and if the API Web Service is not available?
+
+- Test Setup and Teardown - ok
+
+
+
+
+*** Transaction Details (TransactionDetails)
+- Happy Path - ok
+
+- Scenarios - 5
+>> what happens when I have no data?
+>> how can I check if the data presented is the data that should be presented?
+
+- Test Setup and Teardown - 0
+
+
+
+
+*** Transaction Classification (TransactionDetails || FillCategories)
+- Happy Path - ok
+
+- Scenarios - 6
+>> can I update a classification?
+
+- Test Setup and Teardown - ok
+
+
+
+
+*** Identification of Unclassified Transactions (TransactionDetails)
+- Happy Path - ok
+
+- Scenarios - 0
+>> what happens when you don't have data?
+
+- Test Setup and Teardown - 0
+
+
+
+
+*** Filtering (FilterTable)
+- Happy Path - ok
+
+- Scenarios - 3
+>> is it possible to have multiple filters?
+>> what happens if I  don't have any transaction?
+
+- Test Setup and Teardown - ok
+
+
+
+
+*** Fully Classified Transactions List with Aggregate Information (Statistics)
+- Happy Path - ok
+
+- Scenarios - 21
+>> what happens when there is no data?
+>> where are the tables?
+
+- Test Setup and Teardown - ok
+
+
+
+!!!!! Gherkin Usage
+Using a "Background" when you only have one scenario does not make much sense.
+
+No usage of "Scenario Outline+Examples" on some cases
+
+Name for scenarios should match in a sentence a brief description of the test
+
+############
+Pipeline: Faltou confirmar acesso às apps em staging e production (configurações nginx/node?). licença do KS...
+
