@@ -20,7 +20,5 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://localhost:8080/')
 
-WebUI.verifyElementPresent(findTestObject('Page_peebu_web/header_PeeBu'), 0)
-
-WebUI.verifyElementText(findTestObject('Page_peebu_web/header_PeeBu'), 'PeeBu')
+WebUI.verifyElementPresent(findTestObject('Page_peebu_web/header_Current Balance'), 0)
 

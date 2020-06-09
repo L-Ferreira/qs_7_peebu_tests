@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>span_PeeBu</name>
+   <name>header_PeeBu</name>
    <tag></tag>
    <elementGuidId>cb8b925e-7ad6-4304-b076-242c6f032463</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

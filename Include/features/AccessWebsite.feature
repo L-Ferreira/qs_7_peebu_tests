@@ -8,10 +8,10 @@ Feature: Access the website's home page
     When the user navigates to the PeeBu Home Page
 
   Scenario: See the PeeBu Headline
-    Then the user sees the "PeeBu" Headline
+    Then the user sees the "PeeBu" header
 
   Scenario: See the balance label
-    Then the user sees the "Balance" component
+    Then the user sees the "Current Balance" header
 
   Scenario: See the transactions table
     Then the user sees the "transactions table" component

@@ -55,11 +55,10 @@ class AccessWebsiteStepDefs {
 		WebUI.navigateToUrl("http://192.168.1.9:8080/")
 	}
 
-	@Then("the user sees the {string} Headline")
+	@Then("the user sees the {string} header")
 	public void the_user_sees_the_Headline(String string) {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/span_' + string), 0)
-		WebUI.verifyElementText(findTestObject('Page_peebu_web/span_' + string), string)
-		// TODO find a better name for this (instead of "Headline") and rename the actual objects to something else other than "span_"
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/header_' + string), 0)
+		WebUI.verifyElementText(findTestObject('Page_peebu_web/header_' + string), string)
 	}
 
 	@Then("the user sees the {string} component")
