@@ -14,11 +14,11 @@ Feature: Access the website's home page
     Then the user sees the "Current Balance" header
 
   Scenario: See the transactions table
-    Then the user sees the "transactions table" component
+    Then the user sees the "Transactions Table" component
 
   Scenario: See the Search Bar
     Then the user sees the "Search Bar" component
 
   Scenario: See the statistics
-    And the user scrolls down
-    Then the user sees the "Statistics Headline"
+    And the user scrolls down to the "Statistics" header
+    Then the user sees the "Statistics" header
