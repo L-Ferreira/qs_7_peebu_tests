@@ -56,24 +56,17 @@ class AccessWebsiteStepDefs {
 	}
 
 	@Then("the user sees the {string} header")
-	public void the_user_sees_the_Headline(String string) {
+	public void the_user_sees_the_header(String string) {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/header_' + string), 0)
-		WebUI.verifyElementText(findTestObject('Page_peebu_web/header_' + string), string)
 	}
 
 	@Then("the user sees the {string} component")
 	public void the_user_sees_the_component(String string) {
-		System.out.println("TODO");
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/component_' + string), 0)
 	}
 
-	@When("the user scrolls down")
-	public void the_user_scrolls_down() {
-		WebUI.scrollToElement(null, 0)
-		// TODO won't work like this
-	}
-
-	@Then("the user sees the {string}")
-	public void the_user_sees_the(String string) {
-		System.out.println("TODO");
+	@When("the user scrolls down to the {string} header")
+	public void the_user_scrolls_down_to_the_header(String string) {
+		WebUI.scrollToElement(findTestObject('Object Repository/Page_peebu_web/header_' + string), 0)
 	}
 }
