@@ -64,8 +64,7 @@ class TransactionDetailsStepDefs {
   
   @Then("the user sees an {string} button on the {string} table column")
   public void the_user_sees_an_button_on_the_table_column(String string, String string2) {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
+	  WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
   }
   
   @When("the user selects the {string} button on the first table line")
