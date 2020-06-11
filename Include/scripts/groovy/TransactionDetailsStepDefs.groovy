@@ -56,10 +56,10 @@ class TransactionDetailsStepDefs {
     System.out.println("TODO");
   }
 
+  
   @Then("the user sees at least one table line with the transaction details")
   public void the_user_sees_at_least_one_table_line_with_the_transaction_details() {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
+	  WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/td_First Row'), 0)
   }
   
   @Then("the user sees an {string} button on the {string} table column")

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TestCaseCheckExpensesTableHasFirstRow</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>44e3536c-4832-417f-8462-2f07738154f1</testCaseGuid>
+</TestCaseEntity>
