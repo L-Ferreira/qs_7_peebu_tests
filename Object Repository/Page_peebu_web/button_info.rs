@@ -3,7 +3,13 @@
    <description></description>
    <name>button_info</name>
    <tag></tag>
-   <elementGuidId>42a64199-1c57-4d37-ba9f-5b92e5381ef2</elementGuidId>
+   <elementGuidId>8d38d170-f25b-4b0f-a0c9-fd97ae595606</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-content&quot;]/div[@class=&quot;v-content__wrap&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;v-data-table elevation-4 theme--light&quot;]/div[@class=&quot;v-data-table__wrapper&quot;]/table[1]/tbody[1]/tr[1]/td[@class=&quot;text-start&quot;]/button[@class=&quot;v-icon notranslate v-icon--link mdi mdi-information-outline theme--light&quot;][count(. | //*[@type = 'button']) = count(//*[@type = 'button'])]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -28,31 +34,31 @@
       <value>v-icon notranslate v-icon--link mdi mdi-information-outline theme--light</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-content&quot;]/div[@class=&quot;v-content__wrap&quot;]/div[@class=&quot;container&quot;]/div[1]/div[@class=&quot;v-data-table elevation-4 theme--light&quot;]/div[@class=&quot;v-data-table__wrapper&quot;]/table[1]/tbody[1]/tr[1]/td[@class=&quot;text-start&quot;]/button[@class=&quot;v-icon notranslate v-icon--link mdi mdi-information-outline theme--light&quot;]</value>
+      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-content&quot;]/div[@class=&quot;v-content__wrap&quot;]/div[@class=&quot;container&quot;]/div[@class=&quot;v-data-table elevation-4 theme--light&quot;]/div[@class=&quot;v-data-table__wrapper&quot;]/table[1]/tbody[1]/tr[1]/td[@class=&quot;text-start&quot;]/button[@class=&quot;v-icon notranslate v-icon--link mdi mdi-information-outline theme--light&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@type='button']</value>
+      <value>(//button[@type='button'])[4]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/main/div/div/div/div/div/table/tbody/tr/td[6]/button</value>
+      <value>//div[@id='app']/div/main/div/div/div[2]/div/table/tbody/tr/td[6]/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button</value>
+      <value>//td[6]/button</value>
    </webElementXpaths>
 </WebElementEntity>

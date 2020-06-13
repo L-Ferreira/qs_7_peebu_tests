@@ -53,6 +53,7 @@ class AccessWebsiteStepDefs {
 	@When("the user navigates to the PeeBu Home Page")
 	public void the_user_navigates_to_the_PeeBu_Home_Page() {
 		WebUI.navigateToUrl(GlobalVariable.URL)
+		Thread.sleep(2000)
 	}
 
 	@Then("the user sees the {string} header")

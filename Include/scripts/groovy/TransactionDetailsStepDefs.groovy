@@ -69,6 +69,7 @@ class TransactionDetailsStepDefs {
 
 	@When("the user selects the {string} button on the first table line")
 	public void the_user_selects_the_button_on_the_first_table_line(String string) {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
@@ -76,11 +77,10 @@ class TransactionDetailsStepDefs {
 	public void the_user_sees_the_transaction_information_modal_window() {
 		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/div_Transaction Info'), 0)
 	}
-	
+
 	@When("the user selects the {string} button")
 	public void the_user_selects_the_button(String string) {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println("TODO");
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
 	@When("the user selects the {string} button on the {string} column")
@@ -94,17 +94,17 @@ class TransactionDetailsStepDefs {
 		// Write code here that turns the phrase above into concrete actions
 		System.out.println("TODO");
 	}
-	
+
 	@When("the user selects the {string} button on the {string} dropdown")
 	public void the_user_selects_the_button_on_the_dropdown(String string, String string2) {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println("TODO");
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/dropdown_' + string2))
+		WebUI.scrollToElement(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
 	@Then("the user sees the updated transaction with the {string} category")
 	public void the_user_sees_the_updated_transaction_with_the_category(String string) {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println("TODO");
+		WebUI.verifyElementText(findTestObject('Object Repository/Page_peebu_web/span_Category'), string)
 	}
 
 	@Then("the user sees the following information on the details")
@@ -118,5 +118,4 @@ class TransactionDetailsStepDefs {
 		// For other transformations you can register a DataTableType.
 		System.out.println("TODO");
 	}
-	
 }

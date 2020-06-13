@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[(text() = 'My ExpensesSearch' or . = 'My ExpensesSearch')]</value>
+         <value>//*[(text() = 'My Expenses' or . = 'My Expenses')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -31,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>My ExpensesSearch</value>
+      <value>My Expenses</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
