@@ -52,7 +52,8 @@ class AccessWebsiteStepDefs {
 
 	@When("the user navigates to the PeeBu Home Page")
 	public void the_user_navigates_to_the_PeeBu_Home_Page() {
-		WebUI.navigateToUrl(GlobalVariable.URL)	}
+		WebUI.navigateToUrl(GlobalVariable.URL)
+	}
 
 	@Then("the user sees the {string} header")
 	public void the_user_sees_the_header(String string) {

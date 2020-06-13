@@ -6,8 +6,8 @@ Feature: See the transaction details
   Background: 
     Given the user has an open browser
     And the user has a transaction with the following information
-      | entity                        | amount | timestamp  | type    | category    |
-      | Wintheiser, Kuhn and Turcotte | 269.10 | 2019-06-16 | invoice | Hairdresser |
+      | entity                        | amount | type    | category |
+      | Wintheiser, Kuhn and Turcotte | 269.10 | invoice | Vet      |
     When the user navigates to the PeeBu Home Page
 
   Scenario: Transaction table has values
@@ -22,8 +22,7 @@ Feature: See the transaction details
 
   Scenario: Change a transaction's category to "Health"
     And the user selects the "info" button on the first table line
-    And the user selects the "Edit" button
-    And the user selects the "Health" button on the "Category" column
+    And the user selects the "Health" button on the "Category" dropdown
     And the user selects the "Save" button
     Then the user goes back to the PeeBu Home Page
     And the user sees the updated transaction with the "Health" category
@@ -36,5 +35,5 @@ Feature: See the transaction details
   Scenario: Transaction Information details are correct
     And the user selects the "info" button on the first table line
     Then the user sees the following information on the details
-      | entity                        | amount | timestamp  | type    | category    |
-      | Wintheiser, Kuhn and Turcotte | 269.10 | 2019-06-16 | invoice | Hairdresser |
+      | entity                        | amount | type    | category |
+      | Wintheiser, Kuhn and Turcotte | 269.10 | invoice | Vet      |

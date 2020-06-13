@@ -44,74 +44,81 @@ import cucumber.api.java.en.When
 import io.cucumber.datatable.DataTable;
 
 class TransactionDetailsStepDefs {
-  @Given("the user has a transaction with the following information")
-  public void the_user_has_a_transaction_with_the_following_information(DataTable dataTable) {
-      // Write code here that turns the phrase above into concrete actions
-      // For automatic transformation, change DataTable to one of
-      // List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-      // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-      // Double, Byte Short, Long, BigInteger or BigDecimal.
-      //
-      // For other transformations you can register a DataTableType.
-    System.out.println("TODO");
-  }
+	@Given("the user has a transaction with the following information")
+	public void the_user_has_a_transaction_with_the_following_information(DataTable dataTable) {
+		// Write code here that turns the phrase above into concrete actions
+		// For automatic transformation, change DataTable to one of
+		// List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+		// Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+		// Double, Byte Short, Long, BigInteger or BigDecimal.
+		//
+		// For other transformations you can register a DataTableType.
+		System.out.println("TODO");
+	}
 
-  
-  @Then("the user sees at least one table line with the transaction details")
-  public void the_user_sees_at_least_one_table_line_with_the_transaction_details() {
-	  WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/td_First Row'), 0)
-  }
-  
-  @Then("the user sees an {string} button on the {string} table column")
-  public void the_user_sees_an_button_on_the_table_column(String string, String string2) {
-	  WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
-  }
-  
-  @When("the user selects the {string} button on the first table line")
-  public void the_user_selects_the_button_on_the_first_table_line(String string) {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
-  }
-  
-  @Then("the user sees the transaction information modal window")
-  public void the_user_sees_the_transaction_information_modal_window() {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
-  }
-  
-  @When("the user selects the {string} button")
-  public void the_user_selects_the_button(String string) {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
-  }
-  
-  @When("the user selects the {string} button on the {string} column")
-  public void the_user_selects_the_button_on_the_column(String string, String string2) {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
-  }
-  
-  @Then("the user goes back to the PeeBu Home Page")
-  public void the_user_goes_back_to_the_PeeBu_Home_Page() {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
-  }
-  
-  @Then("the user sees the updated transaction with the {string} category")
-  public void the_user_sees_the_updated_transaction_with_the_category(String string) {
-      // Write code here that turns the phrase above into concrete actions
-      System.out.println("TODO");
-  }
-  
-  @Then("the user sees the following information on the details")
-  public void the_user_sees_the_following_information_on_the_details(DataTable dataTable) {
-      // Write code here that turns the phrase above into concrete actions
-      // For automatic transformation, change DataTable to one of
-      // List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-      // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-      // Double, Byte Short, Long, BigInteger or BigDecimal.
-      //
-      // For other transformations you can register a DataTableType.
-      System.out.println("TODO");
-  }
+
+	@Then("the user sees at least one table line with the transaction details")
+	public void the_user_sees_at_least_one_table_line_with_the_transaction_details() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/td_First Row'), 0)
+	}
+
+	@Then("the user sees an {string} button on the {string} table column")
+	public void the_user_sees_an_button_on_the_table_column(String string, String string2) {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
+	}
+
+	@When("the user selects the {string} button on the first table line")
+	public void the_user_selects_the_button_on_the_first_table_line(String string) {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
+	}
+
+	@Then("the user sees the transaction information modal window")
+	public void the_user_sees_the_transaction_information_modal_window() {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
+	}
+
+	@When("the user selects the {string} button")
+	public void the_user_selects_the_button(String string) {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
+	}
+
+	@When("the user selects the {string} button on the {string} column")
+	public void the_user_selects_the_button_on_the_column(String string, String string2) {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
+	}
+
+	@Then("the user goes back to the PeeBu Home Page")
+	public void the_user_goes_back_to_the_PeeBu_Home_Page() {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
+	}
+	
+	@When("the user selects the {string} button on the {string} dropdown")
+	public void the_user_selects_the_button_on_the_dropdown(String string, String string2) {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
+	}
+
+	@Then("the user sees the updated transaction with the {string} category")
+	public void the_user_sees_the_updated_transaction_with_the_category(String string) {
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
+	}
+
+	@Then("the user sees the following information on the details")
+	public void the_user_sees_the_following_information_on_the_details(DataTable dataTable) {
+		// Write code here that turns the phrase above into concrete actions
+		// For automatic transformation, change DataTable to one of
+		// List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+		// Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+		// Double, Byte Short, Long, BigInteger or BigDecimal.
+		//
+		// For other transformations you can register a DataTableType.
+		System.out.println("TODO");
+	}
+	
 }
