@@ -69,16 +69,14 @@ class TransactionDetailsStepDefs {
 
 	@When("the user selects the {string} button on the first table line")
 	public void the_user_selects_the_button_on_the_first_table_line(String string) {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println("TODO");
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
 	@Then("the user sees the transaction information modal window")
 	public void the_user_sees_the_transaction_information_modal_window() {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println("TODO");
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/div_Transaction Info'), 0)
 	}
-
+	
 	@When("the user selects the {string} button")
 	public void the_user_selects_the_button(String string) {
 		// Write code here that turns the phrase above into concrete actions
