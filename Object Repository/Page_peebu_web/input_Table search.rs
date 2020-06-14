@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>details_Amount</name>
+   <name>input_Table search</name>
    <tag></tag>
-   <elementGuidId>f1b6468c-3c67-4d8e-a506-62c7da73d39e</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'input-136' and @type = 'text']</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>30c67420-9014-4d9a-a77a-15e5408f680d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -24,14 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>input-136</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>readonly</name>
-      <type>Main</type>
-      <value>readonly</value>
+      <value>input-17</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -45,27 +32,27 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;input-136&quot;)</value>
+      <value>id(&quot;input-17&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='input-72']</value>
+      <value>//input[@id='input-17']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div[3]/div/div/div[2]/div/div/div[2]/div/div/div/div/input</value>
+      <value>//div[@id='app']/div/main/div/div/div[2]/div/header/div/div[2]/div/div/div/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div/div/div/input</value>
+      <value>//input</value>
    </webElementXpaths>
 </WebElementEntity>

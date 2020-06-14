@@ -9,23 +9,22 @@ Feature: Filter the transaction table
     And the user navigates to the PeeBu Home Page
 
   Scenario Outline: Use the table search field
-    When the user selects the "Table Search" field
-    And the user inputs a <filter> text
-    And the user presses the "Go!" button
-    Then the user should see the results filtered by <filter>
+    When the user inputs the <filter> text on the "Table Search" field
+    And the user selects the "Go" button
+    Then the user sees <resultcount> filtered results
 
     Examples: 
-      | filter    |
-      | education |
-      | health    |
-      | other     |
+      | filter        | resultcount |
+      | "education"   |          15 |
+      | "residence"   |           9 |
+      | "hairdresser" |           6 |
 
   Scenario Outline: Filter transactions by date
     When the user selects the "From date" button
     And the user picks the <startdate> date
     And the user selects the "To date" button
     And the user picks the <enddate> date
-    Then the user should see <resultcount> filtered results
+    Then the user sees <resultcount> filtered results
 
     #The resultcount values are not correct yet
     Examples: 
@@ -42,9 +41,9 @@ Feature: Filter the transaction table
     Then the user should see the results in <ordertype> order of <columnname>
 
     Examples: 
-      | columnname | ordertype  |
-      | entity     | ascending  |
-      | amount     | ascending  |
-      | date       | descending |
-      | type       | descending |
-      | category   | ascending  |
+      | columnname | ordertype    |
+      | "entity"   | "ascending"  |
+      | "amount"   | "ascending"  |
+      | "date"     | "descending" |
+      | "type"     | "descending" |
+      | "category" | "ascending"  |

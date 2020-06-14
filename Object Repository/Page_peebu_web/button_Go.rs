@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_Vet</name>
+   <name>button_Go</name>
    <tag></tag>
-   <elementGuidId>06feaea1-9b55-4684-bf51-03f0c02e40c0</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'list-item-157-10' and (text() = 'Vet' or . = 'Vet')]</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>f626a58b-a027-47ad-bebb-20a21abce4ca</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -17,97 +11,76 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>0</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>aria-selected</name>
-      <type>Main</type>
-      <value>false</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>type</name>
       <type>Main</type>
-      <value>list-item-157-10</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>role</name>
-      <type>Main</type>
-      <value>option</value>
+      <value>button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>v-list-item v-list-item--link theme--light</value>
+      <value>v-btn v-btn--contained theme--light v-size--default</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Vet</value>
+      <value>Go!</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;list-item-157-10&quot;)</value>
+      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-content&quot;]/div[@class=&quot;v-content__wrap&quot;]/div[@class=&quot;container&quot;]/div[3]/div[@class=&quot;row mb-1 no-gutters align-center justify-start&quot;]/div[@class=&quot;col-lg-2 col&quot;]/div[1]/button[@class=&quot;v-btn v-btn--contained theme--light v-size--default&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='list-item-93-10']</value>
+      <value>(//button[@type='button'])[18]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='list-84']/div[11]</value>
+      <value>//div[@id='app']/div/main/div/div/div[3]/div/div[5]/div/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Residence'])[2]/following::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='End date'])[2]/following::button[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nursing Home'])[1]/following::div[6]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Start date'])[2]/following::button[3]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::div[5]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Number of transactions by category'])[1]/preceding::button[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/div/div[11]</value>
+      <value>//div[5]/div/button</value>
    </webElementXpaths>
 </WebElementEntity>
