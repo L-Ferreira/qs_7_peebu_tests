@@ -54,41 +54,42 @@ class TransactionDetailsStepDefs {
 		String categoryText = WebUI.getText(findTestObject('Object Repository/Page_peebu_web/span_Category'));
 		
 		if (!(categoryText.equals(data.get(1).get(3)))) {
-			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_info'), 0)
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_info'), 5)
 			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_info'));
-			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/dropdown_Category'), 0)
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/dropdown_Category'), 5)
 			WebUI.click(findTestObject('Object Repository/Page_peebu_web/dropdown_Category'));
-			WebUI.scrollToElement(findTestObject('Object Repository/Page_peebu_web/button_Vet'), 0);
-			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_Vet'), 0)
+			WebUI.scrollToElement(findTestObject('Object Repository/Page_peebu_web/button_Vet'), 10);
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_Vet'), 5)
 			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_Vet'))
-			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_Save'), 0)
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_Save'), 5)
 			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_Save'));
 		}
 	}
 
 	@Then("the user sees at least one table line with the transaction details")
 	public void the_user_sees_at_least_one_table_line_with_the_transaction_details() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/td_First Row'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/td_First Row'), 10)
 	}
 
 	@Then("the user sees an {string} button on the {string} table column")
 	public void the_user_sees_an_button_on_the_table_column(String string, String string2) {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/button_' + string), 10)
 	}
 
 	@When("the user selects the {string} button on the first table line")
 	public void the_user_selects_the_button_on_the_first_table_line(String string) {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_' + string), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
 	@Then("the user sees the transaction information modal window")
 	public void the_user_sees_the_transaction_information_modal_window() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/div_Transaction Info'), 0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/div_Transaction Info'), 10)
 	}
 
 	@When("the user selects the {string} button")
 	public void the_user_selects_the_button(String string) {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_' + string), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
@@ -106,8 +107,10 @@ class TransactionDetailsStepDefs {
 
 	@When("the user selects the {string} button on the {string} dropdown")
 	public void the_user_selects_the_button_on_the_dropdown(String string, String string2) {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/dropdown_' + string2), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/dropdown_' + string2))
-		WebUI.scrollToElement(findTestObject('Object Repository/Page_peebu_web/button_' + string), 0)
+		WebUI.scrollToElement(findTestObject('Object Repository/Page_peebu_web/button_' + string), 10)
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_' + string), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
