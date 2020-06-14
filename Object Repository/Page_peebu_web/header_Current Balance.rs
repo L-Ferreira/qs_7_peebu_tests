@@ -4,6 +4,12 @@
    <name>header_Current Balance</name>
    <tag></tag>
    <elementGuidId>4169c66a-489c-4eab-a410-2e1f29c01c2a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'Your current balance is:' or . = 'Your current balance is:')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -18,7 +24,7 @@
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Your current balance is: 12345 €</value>
+      <value>Your current balance is:</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
