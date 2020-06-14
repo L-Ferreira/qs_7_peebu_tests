@@ -47,7 +47,7 @@ class AccessWebsiteStepDefs {
 	@Given("the user has an open browser")
 	public void the_user_has_an_open_browser() {
 		// Write code here that turns the phrase above into concrete actions
-		WebUI.openBrowser('')
+		WebUI.openBrowser(null)
 	}
 
 	@When("the user navigates to the PeeBu Home Page")

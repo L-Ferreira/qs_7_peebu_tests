@@ -46,16 +46,25 @@ import io.cucumber.datatable.DataTable;
 class TransactionDetailsStepDefs {
 	@Given("the user has a transaction with the following information")
 	public void the_user_has_a_transaction_with_the_following_information(DataTable dataTable) {
-		// Write code here that turns the phrase above into concrete actions
-		// For automatic transformation, change DataTable to one of
-		// List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-		// Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-		// Double, Byte Short, Long, BigInteger or BigDecimal.
-		//
-		// For other transformations you can register a DataTableType.
-		System.out.println("TODO");
+		List<List<String>> data = dataTable.asLists(String.class);
+		
+		WebUI.navigateToUrl(GlobalVariable.URL)
+		Thread.sleep(1000);
+		
+		String categoryText = WebUI.getText(findTestObject('Object Repository/Page_peebu_web/span_Category'));
+		
+		if (!(categoryText.equals(data.get(1).get(3)))) {
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_info'), 0)
+			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_info'));
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/dropdown_Category'), 0)
+			WebUI.click(findTestObject('Object Repository/Page_peebu_web/dropdown_Category'));
+			WebUI.scrollToElement(findTestObject('Object Repository/Page_peebu_web/button_Vet'), 0);
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_Vet'), 0)
+			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_Vet'))
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_Save'), 0)
+			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_Save'));
+		}
 	}
-
 
 	@Then("the user sees at least one table line with the transaction details")
 	public void the_user_sees_at_least_one_table_line_with_the_transaction_details() {
