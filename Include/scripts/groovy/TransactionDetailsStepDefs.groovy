@@ -93,16 +93,10 @@ class TransactionDetailsStepDefs {
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
 	}
 
-	@When("the user selects the {string} button on the {string} column")
-	public void the_user_selects_the_button_on_the_column(String string, String string2) {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println("TODO");
-	}
-
 	@Then("the user goes back to the PeeBu Home Page")
 	public void the_user_goes_back_to_the_PeeBu_Home_Page() {
-		// Write code here that turns the phrase above into concrete actions
-		System.out.println("TODO");
+		//assert WebUI.getWindowTitle() == "PeeBu";
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/header_Current Balance'), 10)
 	}
 
 	@When("the user selects the {string} button on the {string} dropdown")
@@ -121,13 +115,12 @@ class TransactionDetailsStepDefs {
 
 	@Then("the user sees the following information on the details")
 	public void the_user_sees_the_following_information_on_the_details(DataTable dataTable) {
-		// Write code here that turns the phrase above into concrete actions
-		// For automatic transformation, change DataTable to one of
-		// List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-		// Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-		// Double, Byte Short, Long, BigInteger or BigDecimal.
-		//
-		// For other transformations you can register a DataTableType.
-		System.out.println("TODO");
+		List<List<String>> data = dataTable.asLists(String.class);
+
+		assert WebUI.getAttribute(findTestObject('Object Repository/Page_peebu_web/details_Entity'), 'value').equals(data.get(1).get(0))
+		assert WebUI.getAttribute(findTestObject('Object Repository/Page_peebu_web/details_Amount'), 'value').equals(data.get(1).get(1))
+		assert WebUI.getAttribute(findTestObject('Object Repository/Page_peebu_web/details_Type'), 'value').equals(data.get(1).get(2))
+		assert WebUI.getText(findTestObject('Object Repository/Page_peebu_web/details_Category')).equals(data.get(1).get(3))
 	}
+	
 }
