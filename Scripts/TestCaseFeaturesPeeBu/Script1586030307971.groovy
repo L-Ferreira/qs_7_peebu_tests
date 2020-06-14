@@ -15,5 +15,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CucumberKW.runFeatureFolder('Include/features')
+CucumberKW.runFeatureFile('Include/features/AccessWebsite.feature')
+
+CucumberKW.runFeatureFile('Include/features/TransactionDetails.feature')
+
+CucumberKW.runFeatureFile('Include/features/FilterTable.feature')
+
+CucumberKW.runFeatureFile('Include/features/FillCategories.feature')
+
+CucumberKW.runFeatureFile('Include/features/Statistics.feature')
 
