@@ -3,7 +3,7 @@
    <description></description>
    <name>button_info</name>
    <tag></tag>
-   <elementGuidId>8b0c9b36-1be1-49fa-9fc9-e0696ca9daf9</elementGuidId>
+   <elementGuidId>3af59966-2a5b-47a3-8195-607d3272b357</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -32,7 +32,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-content&quot;]/div[@class=&quot;v-content__wrap&quot;]/div[@class=&quot;container&quot;]/div[1]/div[@class=&quot;v-data-table elevation-4 theme--light&quot;]/div[@class=&quot;v-data-table__wrapper&quot;]/table[1]/tbody[1]/tr[1]/td[@class=&quot;text-start&quot;]/button[@class=&quot;v-icon notranslate v-icon--link mdi mdi-information-outline theme--light&quot;]</value>
+      <value>id(&quot;app&quot;)/div[@class=&quot;v-application--wrap&quot;]/main[@class=&quot;v-content&quot;]/div[@class=&quot;v-content__wrap&quot;]/div[@class=&quot;container&quot;]/div[2]/div[@class=&quot;v-data-table elevation-4 theme--light&quot;]/div[@class=&quot;v-data-table__wrapper&quot;]/table[1]/tbody[1]/tr[1]/td[@class=&quot;text-start&quot;]/button[@class=&quot;v-icon notranslate v-icon--link mdi mdi-information-outline theme--light&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='app']/div/main/div/div/div/div/div/table/tbody/tr/td[6]/button</value>
+      <value>//div[@id='app']/div/main/div/div/div[2]/div/div/table/tbody/tr/td[6]/button</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

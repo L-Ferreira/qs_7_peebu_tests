@@ -47,12 +47,12 @@ class TransactionDetailsStepDefs {
 	@Given("the user has a transaction with the following information")
 	public void the_user_has_a_transaction_with_the_following_information(DataTable dataTable) {
 		List<List<String>> data = dataTable.asLists(String.class);
-		
+
 		WebUI.navigateToUrl(GlobalVariable.URL)
 		Thread.sleep(1000);
-		
+
 		String categoryText = WebUI.getText(findTestObject('Object Repository/Page_peebu_web/span_Category'));
-		
+
 		if (!(categoryText.equals(data.get(1).get(3)))) {
 			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_info'), 5)
 			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_info'));
@@ -63,6 +63,7 @@ class TransactionDetailsStepDefs {
 			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_Vet'))
 			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_Save'), 5)
 			WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_Save'));
+			Thread.sleep(1000);
 		}
 	}
 
@@ -122,5 +123,4 @@ class TransactionDetailsStepDefs {
 		assert WebUI.getAttribute(findTestObject('Object Repository/Page_peebu_web/details_Type'), 'value').equals(data.get(1).get(2))
 		assert WebUI.getText(findTestObject('Object Repository/Page_peebu_web/details_Category')).equals(data.get(1).get(3))
 	}
-	
 }
