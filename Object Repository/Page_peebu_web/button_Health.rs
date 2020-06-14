@@ -3,13 +3,7 @@
    <description></description>
    <name>button_Health</name>
    <tag></tag>
-   <elementGuidId>74fac1b7-b050-41de-8168-5e62f58206fd</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'list-item-110-5' and (text() = 'Health' or . = 'Health')]</value>
-      </entry>
-   </selectorCollection>
+   <elementGuidId>1f06d750-5bc7-4e7d-909f-f2fd7824b637</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -31,14 +25,14 @@
       <matchCondition>equals</matchCondition>
       <name>aria-selected</name>
       <type>Main</type>
-      <value>false</value>
+      <value>true</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>list-item-110-5</value>
+      <value>list-item-157-5</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +46,7 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>v-list-item v-list-item--link theme--light</value>
+      <value>v-list-item primary--text v-list-item--active v-list-item--link theme--light v-list-item--highlighted</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,11 +56,11 @@
       <value>Health</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;list-item-110-5&quot;)</value>
+      <value>id(&quot;list-item-157-5&quot;)</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
