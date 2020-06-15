@@ -53,7 +53,26 @@ class FilterTableStepDefs {
 	@Then("the user sees {int} filtered results")
 	public void the_user_sees_filtered_results(Integer int1) {
 		String resultsTotal = WebUI.getText(findTestObject('Object Repository/Page_peebu_web/label_Table results'))
-		String filteredResults = resultsTotal.split(" of ")[1];
-		assert Integer.valueOf(filteredResults) == int1;
+		String[] filteredResults = resultsTotal.split(" of ");
+		assert Integer.valueOf(filteredResults[1]) == int1;
 	}
+	
+	@When("the user picks the {string} date on the {string} field")
+	public void the_user_picks_the_date(String string, String string2) {
+		
+		String[] date = string.split("-");
+		
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2), 5)
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2))
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' + string2), 5)
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' + string2))
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' +  date[1]), 5)
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' + date[1]))
+		
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2), 5)
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2))
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/button_day_' + date[2]), 5)
+		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/button_day_' + date[2]))
+	}
+	
 }
