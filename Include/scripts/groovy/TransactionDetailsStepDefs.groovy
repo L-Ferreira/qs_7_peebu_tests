@@ -69,7 +69,7 @@ class TransactionDetailsStepDefs {
 
 	@Then("the user sees at least one table line with the transaction details")
 	public void the_user_sees_at_least_one_table_line_with_the_transaction_details() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/td_First Row'), 10)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_peebu_web/Filter/first_column_entity'), 10)
 	}
 
 	@Then("the user sees an {string} button on the {string} table column")

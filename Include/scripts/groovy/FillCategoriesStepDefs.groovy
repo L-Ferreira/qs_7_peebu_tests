@@ -46,67 +46,67 @@ import cucumber.api.java.en.When
 class FillCategoriesStepDefs {
 	@Given("there is at least one transaction with no category")
 	public void there_is_at_least_one_transaction_with_no_category() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Then("the user should see an alert to fill missing categories")
 	public void the_user_should_see_an_alert_to_fill_missing_categories() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Given("all transactions have a valid category field")
 	public void all_transactions_have_a_valid_category_field() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Then("the user should not be able to see the {string} alert")
 	public void the_user_should_not_be_able_to_see_the_alert(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@When("the user clicks the {string} button")
 	public void the_user_clicks_the_button(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Then("the user should see a modal with the transactions with no category")
 	public void the_user_should_see_a_modal_with_the_transactions_with_no_category() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Given("there are <number> transactions with no category")
 	public void there_are_number_transactions_with_no_category() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Then("the user should see <number> transactions on the opened modal")
 	public void the_user_should_see_number_transactions_on_the_opened_modal() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@When("the user selects the <category> category for the <transactionid> transaction")
 	public void the_user_selects_the_category_category_for_the_transactionid_transaction() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Then("the user should go back to the PeeBu Home Page")
 	public void the_user_should_go_back_to_the_PeeBu_Home_Page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
-	
+
 	@Then("the <transactionid> transaction should have the <category> category")
 	public void the_transactionid_transaction_should_have_the_category_category() {
-	    // Write code here that turns the phrase above into concrete actions
-	    System.out.println("TODO");
+		// Write code here that turns the phrase above into concrete actions
+		System.out.println("TODO");
 	}
 }

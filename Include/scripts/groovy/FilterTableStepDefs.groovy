@@ -56,23 +56,46 @@ class FilterTableStepDefs {
 		String[] filteredResults = resultsTotal.split(" of ");
 		assert Integer.valueOf(filteredResults[1]) == int1;
 	}
-	
+
 	@When("the user picks the {string} date on the {string} field")
 	public void the_user_picks_the_date(String string, String string2) {
-		
+
 		String[] date = string.split("-");
-		
+
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2))
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' + string2), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' + string2))
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' +  date[1]), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/button_month_' + date[1]))
-		
+
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/input_' + string2))
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Calendar/button_day_' + date[2]), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/Calendar/button_day_' + date[2]))
 	}
-	
+
+	@When("the user selects the {string} order of the {string} column header cell")
+	public void the_user_selects_the_order_of_the_column_header_cell(String string, String string2) {
+		if (string == "ascending") {
+			// Ascending order
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Filter/table_header_' + string2), 5)
+			WebUI.click(findTestObject('Object Repository/Page_peebu_web/Filter/table_header_' + string2))
+			Thread.sleep(200)
+		} else {
+			// Descending order
+			WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Filter/table_header_' + string2), 5)
+			WebUI.click(findTestObject('Object Repository/Page_peebu_web/Filter/table_header_' + string2))
+			Thread.sleep(500)
+			WebUI.click(findTestObject('Object Repository/Page_peebu_web/Filter/table_header_' + string2))
+			Thread.sleep(200)
+		}
+	}
+
+	@Then("the user sees the {string} value on the {string} column of the first row")
+	public void the_user_sees_the_value_on_the_column_of_the_first_row(String string, String string2) {
+		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Filter/first_column_' + string2), 5)
+		assert WebUI.getText(findTestObject('Object Repository/Page_peebu_web/Filter/first_column_' + string2)).equals(string)
+	}
+
 }

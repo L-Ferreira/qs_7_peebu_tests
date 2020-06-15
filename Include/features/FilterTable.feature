@@ -26,12 +26,12 @@ Feature: Filter the transaction table
 
     Examples: 
       | startdate    | enddate      | resultcount |
-      | "2020-02-01" | "2020-06-02" |           5 |
-      | "2020-01-09" | "2020-02-03" |           7 |
+      | "2020-02-01" | "2020-05-02" |           5 |
+      | "2020-01-09" | "2020-03-03" |          12 |
 
   Scenario: Sort results by type in ascending order
     When the user selects the "ascending" order of the "type" column header cell
-    Then the user sees the "deposit" value on the "type" column of the first row
+    Then the user sees the "Crist - Wintheiser" value on the "type" column of the first row
 
   Scenario Outline: Sort results by column
     When the user selects the <ordertype> order of the <columnname> column header cell
@@ -40,6 +40,6 @@ Feature: Filter the transaction table
     Examples: 
       | columnname | ordertype    | firstvalue        |
       | "entity"   | "ascending"  | "Abbott - Marvin" |
-      | "amount"   | "ascending"  | "17.79"           |
-      | "type"     | "descending" | "withdrawal"      |
-      | "category" | "descending" | "Vet"             |
+      | "amount"   | "ascending"  | "Pouros Group"           |
+      | "type"     | "descending" | "Thompson Group"      |
+      | "category" | "descending" | "Wintheiser, Kuhn and Turcotte"             |
