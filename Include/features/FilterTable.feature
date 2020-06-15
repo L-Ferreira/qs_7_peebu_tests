@@ -26,8 +26,8 @@ Feature: Filter the transaction table
 
     Examples: 
       | startdate    | enddate      | resultcount |
-      | "2020-02-01" | "2020-05-02" |           5 |
-      | "2020-01-09" | "2020-03-03" |          12 |
+      | "2020-02-01" | "2020-05-01" |           5 |
+      | "2020-01-09" | "2020-03-09" |          12 |
 
   Scenario: Sort results by type in ascending order
     When the user selects the "ascending" order of the "type" column header cell

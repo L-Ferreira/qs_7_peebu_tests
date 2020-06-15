@@ -56,6 +56,8 @@ class FilterTableStepDefs {
 		String[] filteredResults = resultsTotal.split(" of ");
 		assert Integer.valueOf(filteredResults[1]) == int1;
 	}
+	
+	
 
 	@When("the user picks the {string} date on the {string} field")
 	public void the_user_picks_the_date(String string, String string2) {
@@ -97,5 +99,4 @@ class FilterTableStepDefs {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/Filter/first_column_' + string2), 5)
 		assert WebUI.getText(findTestObject('Object Repository/Page_peebu_web/Filter/first_column_' + string2)).equals(string)
 	}
-
 }

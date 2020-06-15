@@ -23,5 +23,3 @@ CucumberKW.runFeatureFile('Include/features/FilterTable.feature')
 
 CucumberKW.runFeatureFile('Include/features/FillCategories.feature')
 
-CucumberKW.runFeatureFile('Include/features/Statistics.feature')
-

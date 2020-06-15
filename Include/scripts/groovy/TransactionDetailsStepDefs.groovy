@@ -92,6 +92,8 @@ class TransactionDetailsStepDefs {
 	public void the_user_selects_the_button(String string) {
 		WebUI.waitForElementVisible(findTestObject('Object Repository/Page_peebu_web/button_' + string), 5)
 		WebUI.click(findTestObject('Object Repository/Page_peebu_web/button_' + string))
+		Thread.sleep(1000);
+		
 	}
 
 	@Then("the user goes back to the PeeBu Home Page")
