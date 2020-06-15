@@ -38,8 +38,8 @@ Feature: Filter the transaction table
     Then the user sees the <firstvalue> value on the <columnname> column of the first row
 
     Examples: 
-      | columnname | ordertype    | firstvalue        |
-      | "entity"   | "ascending"  | "Abbott - Marvin" |
-      | "amount"   | "ascending"  | "Pouros Group"           |
-      | "type"     | "descending" | "Thompson Group"      |
-      | "category" | "descending" | "Wintheiser, Kuhn and Turcotte"             |
+      | columnname | ordertype    | firstvalue                      |
+      | "entity"   | "ascending"  | "Abbott - Marvin"               |
+      | "amount"   | "ascending"  | "Pouros Group"                  |
+      | "type"     | "descending" | "Thompson Group"                |
+      | "category" | "descending" | "Wintheiser, Kuhn and Turcotte" |
