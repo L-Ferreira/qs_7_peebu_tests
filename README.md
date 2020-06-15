@@ -5,19 +5,19 @@
 ```
 Username: admin
 Password: JkadT.7b
-External IP: 34.91.111.53 (Updated 04/04/2020)
+External IP: 35.204.101.152 (Updated 15/06/2020)
 ```
 
 ### Production
 
 ```
-External IP: 34.91.156.166 (Updated 04/04/2020)
+External IP: 35.204.234.179 (Updated 15/06/2020)
 ```
 
 ### Staging
 
 ```
-External IP: 34.91.44.121 (Updated 04/04/2020)
+External IP: 34.90.4.73 (Updated 15/06/2020)
 ```
 
 Made by Alexandre Silva & Luís Ferreira
